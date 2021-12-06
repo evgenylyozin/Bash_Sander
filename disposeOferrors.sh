@@ -1,0 +1,1 @@
+grep root /etc/* 2>/dev/null > grepout.txt

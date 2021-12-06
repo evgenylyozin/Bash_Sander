@@ -1,0 +1,33 @@
+/etc/anacrontab:HOME=/root
+/etc/anacrontab:LOGNAME=root
+/etc/bash.bashrc:# set variable identifying the chroot you work in (used in the prompt below)
+/etc/bash.bashrc:if [ -z "${debian_chroot:-}" ] && [ -r /etc/debian_chroot ]; then
+/etc/bash.bashrc:    debian_chroot=$(cat /etc/debian_chroot)
+/etc/bash.bashrc:  PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
+/etc/bash.bashrc:	To run a command as administrator (user "root"), use "sudo <command>".
+/etc/bash.bashrc:	See "man sudo_root" for details.
+/etc/ca-certificates.conf:mozilla/Comodo_AAA_Services_root.crt
+/etc/ca-certificates.conf.dpkg-old:mozilla/Comodo_AAA_Services_root.crt
+/etc/crontab:17 *	* * *	root    cd / && run-parts --report /etc/cron.hourly
+/etc/crontab:25 6	* * *	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.daily )
+/etc/crontab:47 6	* * 7	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.weekly )
+/etc/crontab:52 6	1 * *	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.monthly )
+/etc/e2scrub.conf:# recipient=root
+/etc/fuse.conf:# Set the maximum number of FUSE mounts allowed to non-root users.
+/etc/fuse.conf:# Allow non-root users to specify the allow_other or allow_root mount options.
+/etc/group:root:x:0:
+/etc/group-:root:x:0:
+/etc/hdparm.conf:## the keyword 'command_line' are not run until after the root filesystem
+/etc/hdparm.conf:## to run hdparm to set parameters for your root disk, please use the
+Binary file /etc/ld.so.cache matches
+/etc/login.defs:# (examples: 022 -> 002, 077 -> 007) for non-root users, if the uid is
+/etc/logrotate.conf:su root adm
+/etc/ltrace.conf:int   SYS_chroot(string);
+/etc/mailcap.order:#  After modifying this file, be sure to run /usr/sbin/update-mime (as root)
+/etc/nanorc:## In root's .nanorc you might want to use:
+/etc/passwd:root:x:0:0:root:/root:/bin/bash
+/etc/passwd:nm-openvpn:x:118:124:NetworkManager OpenVPN,,,:/var/lib/openvpn/chroot:/usr/sbin/nologin
+/etc/passwd-:root:x:0:0:root:/root:/bin/bash
+/etc/passwd-:nm-openvpn:x:118:124:NetworkManager OpenVPN,,,:/var/lib/openvpn/chroot:/usr/sbin/nologin
+/etc/services:rootd		1094/tcp
+/etc/xattr.conf:xfsroot.*			skip		# xfs specific; obsolete
